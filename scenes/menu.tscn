@@ -1,4 +1,4 @@
-[gd_scene load_steps=18 format=3 uid="uid://du8252tyr27km"]
+[gd_scene load_steps=21 format=3 uid="uid://du8252tyr27km"]
 
 [ext_resource type="Script" path="res://Menu.gd" id="1_4nro0"]
 [ext_resource type="Texture2D" uid="uid://cjfiyxnljgi2m" path="res://assets/Tiles/Transparent/tile_0042.png" id="2_4mrw2"]
@@ -6,8 +6,11 @@
 [ext_resource type="Texture2D" uid="uid://3lqwyq7cwmr" path="res://assets/Tiles/Transparent/tile_0380.png" id="4_kgg17"]
 [ext_resource type="Texture2D" uid="uid://0loetysa5cut" path="res://assets/Bg 2/PNG/Background layers/Layer_0011_0.png" id="5_b7s5b"]
 [ext_resource type="Texture2D" uid="uid://dhlxaei36tc6a" path="res://assets/Bg 2/PNG/Background layers/Layer_0010_1.png" id="6_rpmet"]
+[ext_resource type="Texture2D" uid="uid://dvavfpac7b3nk" path="res://assets/Tiles/Transparent/tile_0033.png" id="6_u3qkd"]
+[ext_resource type="Texture2D" uid="uid://nqh6uhm0tuoh" path="res://assets/Tiles/Transparent/tile_0102.png" id="7_6y2wd"]
 [ext_resource type="Texture2D" uid="uid://vmo0ic6lup1u" path="res://assets/Bg 2/PNG/Background layers/Layer_0009_2.png" id="7_xr48l"]
 [ext_resource type="Texture2D" uid="uid://dqmore5ib3aox" path="res://assets/Bg 2/PNG/Background layers/Layer_0008_3.png" id="8_nwa0y"]
+[ext_resource type="Texture2D" uid="uid://bxhkjc0y7wuxg" path="res://assets/Tiles/Transparent/tile_0077.png" id="8_s0r5p"]
 [ext_resource type="Texture2D" uid="uid://g6pj3akes7lg" path="res://assets/Bg 2/PNG/Background layers/Layer_0007_Lights.png" id="9_nypcd"]
 [ext_resource type="Texture2D" uid="uid://dwhicu0xabig" path="res://assets/Bg 2/PNG/Background layers/Layer_0006_4.png" id="10_3c1mf"]
 [ext_resource type="Texture2D" uid="uid://pascce6ary8p" path="res://assets/Bg 2/PNG/Background layers/Layer_0005_5.png" id="11_hevw3"]
@@ -29,9 +32,9 @@ script = ExtResource("1_4nro0")
 
 [node name="MarginContainer" type="MarginContainer" parent="."]
 layout_mode = 0
-offset_top = 100.0
+offset_top = 42.0
 offset_right = 288.0
-offset_bottom = 201.0
+offset_bottom = 178.0
 scale = Vector2(4, 4)
 
 [node name="VBoxContainer" type="VBoxContainer" parent="MarginContainer"]
@@ -59,6 +62,23 @@ text = "Quit"
 icon = ExtResource("4_kgg17")
 icon_alignment = 2
 expand_icon = true
+
+[node name="OptionButton" type="OptionButton" parent="MarginContainer/VBoxContainer"]
+layout_mode = 2
+alignment = 1
+icon_alignment = 2
+expand_icon = true
+item_count = 3
+selected = 1
+popup/item_0/text = "Easy Difficulty"
+popup/item_0/icon = ExtResource("6_u3qkd")
+popup/item_0/id = 0
+popup/item_1/text = "Normal Difficulty"
+popup/item_1/icon = ExtResource("7_6y2wd")
+popup/item_1/id = 1
+popup/item_2/text = "Hard Difficulty"
+popup/item_2/icon = ExtResource("8_s0r5p")
+popup/item_2/id = 2
 
 [node name="Camera2D" type="Camera2D" parent="."]
 position = Vector2(579, 301)
@@ -265,3 +285,4 @@ bus = &"Music"
 [connection signal="pressed" from="MarginContainer/VBoxContainer/Play" to="." method="_on_play_pressed"]
 [connection signal="pressed" from="MarginContainer/VBoxContainer/Options" to="." method="_on_options_pressed"]
 [connection signal="pressed" from="MarginContainer/VBoxContainer/Quit" to="." method="_on_quit_pressed"]
+[connection signal="item_selected" from="MarginContainer/VBoxContainer/OptionButton" to="." method="_on_option_button_item_selected"]
