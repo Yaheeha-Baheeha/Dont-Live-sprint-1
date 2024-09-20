@@ -1,5 +1,5 @@
 extends Label
-
+#Dont read this code
 
 # Called when the node enters the scene tree for the first time.
 func _ready():
@@ -17,4 +17,5 @@ func _process(_delta):
 
 func die():
 	show()
+	#this is my failed attempt to add a +1 label to the screen when hit
 
