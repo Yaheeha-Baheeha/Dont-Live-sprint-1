@@ -1,19 +1,21 @@
 extends CharacterBody2D
 
+#Code for the player
 
-@export var speed = 300.0
-@export var jump_velocity = -400.0
-@export var acceleration : float = 15.0
-@export var jumps = 1
+@export var speed = 300.0 #main speed
+@export var jump_velocity = -400.0 #Gravity
+@export var acceleration : float = 15.0 #Acceleration
+@export var jumps = 1 #disallows double jumps
 
-enum state {IDLE, RUNNING, JUMPUP, JUMPDOWN, HURT}
+enum state {IDLE, RUNNING, JUMPUP, JUMPDOWN, HURT} #available nimations states
 
-var anim_state = state.IDLE
+var anim_state = state.IDLE #sets the state to idle as soon as the player starts
 
-@onready var animator = $AnimatedSprite2D
+#this links to animations
+@onready var animator = $AnimatedSprite2D 
 @onready var animation_player = $AnimationPlayer
 @onready var pause_menu = $Camera2D/PauseMenu
-var paused = -1
+var paused = -1 #Sets the game to unpaused
 
 
 
@@ -22,32 +24,39 @@ var gravity = ProjectSettings.get_setting("physics/2d/default_gravity")
 @onready var start_pos = global_position
 
 func reset():
+	#resetting position and level
 	global_position = global_position
 	set_physics_process(true)
 	anim_state = state.IDLE
 
 
 func minus1():
+	#removes 1 health point
 	GameManager.hurt = true
 	
 func update_state():
+	#Checks what do when the state should be updated
 	if anim_state == state.HURT:
+		#damages the player when hit
 		GameManager.score += 1
 		minus1()
 		return
 		 
 	if is_on_floor():
 		if velocity == Vector2.ZERO:
-			anim_state = state.IDLE
+			anim_state = state.IDLE #if still onfloor set to idle state
 		elif velocity.x != 0:
-			anim_state = state.RUNNING
+			anim_state = state.RUNNING #if moving on floor set to run state
 	else:
 		if velocity.y < 0:
+			#sets the animation state to jumpup when moving up
 			anim_state = state.JUMPUP
 		else:
+			#sets is to jump down when falling
 			anim_state = state.JUMPDOWN
 
 func update_animation(direction):
+	#changes direction of model according to direction of movement
 	if direction > 0:
 		animator.flip_h = false
 	elif direction < 0:
@@ -82,7 +91,6 @@ func _physics_process(delta):
 		pause()
 
 	# Get the input direction and handle the movement/deceleration.
-	# As good practice, you should replace UI actions with custom gameplay actions.
 	var direction = Input.get_axis("left", "right")
 	if direction:
 		velocity.x = move_toward(velocity.x, direction * speed, acceleration)
@@ -99,6 +107,7 @@ const win_pos = preload("res://scenes/win pos.gd")
 
 
 func pause():
+	#handles the pausing mechanic
 	if paused > 0:
 		pause_menu.hide()
 		Engine.time_scale = 1
@@ -113,6 +122,7 @@ func pause():
 	
 	
 func enemy_checker(enemy):
+	#process if the player is being smoked by an enemy
 	if enemy.is_in_group("Enemy") and velocity.y > 0:
 		enemy.die()
 		velocity.y = jump_velocity
@@ -121,15 +131,17 @@ func enemy_checker(enemy):
 		anim_state = state.HURT
 		$heal.play()
 	elif enemy.is_in_group("Win"):
-		position = (Vector2(17053, -1))
+		#Teleports the player to winpos
+		global_position = (Vector2(17053, -1))
 		GameManager.win = true
 		
 func _on_hit_box_area_entered(area):
-	enemy_checker(area)
+	
+	enemy_checker(area) #runs the funstion above when hitting an enemy
 
 
 func _on_hit_box_body_entered(body):
-	enemy_checker(body)
+	enemy_checker(body) #same but for bodies instead of areas
 
 
 func _on_background_music_finished():
