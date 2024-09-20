@@ -1,0 +1,67 @@
+[gd_scene load_steps=10 format=3 uid="uid://drk6lakgk7pss"]
+
+[ext_resource type="Texture2D" uid="uid://bskihetbwhofo" path="res://assets/Tilemap/monochrome_tilemap_transparent_packed.png" id="1_0jsdl"]
+[ext_resource type="Script" path="res://scenes/healer.gd" id="1_jutpe"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_bl1vr"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_47edj"]
+atlas = ExtResource("1_0jsdl")
+region = Rect2(0, 192, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_dsj0q"]
+atlas = ExtResource("1_0jsdl")
+region = Rect2(16, 192, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_or358"]
+atlas = ExtResource("1_0jsdl")
+region = Rect2(32, 192, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_squl0"]
+atlas = ExtResource("1_0jsdl")
+region = Rect2(48, 192, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_puqon"]
+atlas = ExtResource("1_0jsdl")
+region = Rect2(64, 192, 16, 16)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_xyk2e"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_47edj")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_dsj0q")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_or358")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_squl0")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_puqon")
+}],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}]
+
+[node name="Healer" type="CharacterBody2D" groups=["Enemy", "Hurt"]]
+script = ExtResource("1_jutpe")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("CircleShape2D_bl1vr")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+position = Vector2(1.19209e-07, -2)
+scale = Vector2(1.25, 1.25)
+sprite_frames = SubResource("SpriteFrames_xyk2e")
+autoplay = "default"
+frame_progress = 0.514593
+
+[node name="Timer" type="Timer" parent="."]
+autostart = true
+
+[connection signal="timeout" from="Timer" to="." method="_on_timer_timeout"]

@@ -1,0 +1,50 @@
+[gd_scene load_steps=5 format=3 uid="uid://cwuequayhcnqp"]
+
+[ext_resource type="Script" path="res://scenes/Options.gd" id="1_l0vjg"]
+[ext_resource type="Texture2D" uid="uid://bmjy3s82ycwt0" path="res://assets/Tiles/Transparent/tile_0307.png" id="2_b0b0x"]
+[ext_resource type="Texture2D" uid="uid://w8luk20ojcho" path="res://assets/Tiles/Transparent/tile_0184.png" id="3_vfwtm"]
+[ext_resource type="AudioStream" uid="uid://ueesvidfhj3v" path="res://audio/electronica-retro-dramatic-80s-movies-music-21507.mp3" id="4_tyu1v"]
+
+[node name="Menu" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_l0vjg")
+
+[node name="MarginContainer" type="MarginContainer" parent="."]
+layout_mode = 0
+offset_top = 190.0
+offset_right = 289.0
+offset_bottom = 257.0
+scale = Vector2(4, 4)
+
+[node name="VBoxContainer" type="VBoxContainer" parent="MarginContainer"]
+layout_mode = 2
+
+[node name="Volume" type="Button" parent="MarginContainer/VBoxContainer"]
+layout_mode = 2
+text = "Volume
+"
+icon = ExtResource("2_b0b0x")
+icon_alignment = 2
+expand_icon = true
+
+[node name="Back" type="Button" parent="MarginContainer/VBoxContainer"]
+layout_mode = 2
+text = "Back
+"
+icon = ExtResource("3_vfwtm")
+expand_icon = true
+
+[node name="Camera2D" type="Camera2D" parent="."]
+position = Vector2(581, 310)
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("4_tyu1v")
+bus = &"Music"
+
+[connection signal="pressed" from="MarginContainer/VBoxContainer/Volume" to="." method="_on_volume_pressed"]
+[connection signal="pressed" from="MarginContainer/VBoxContainer/Back" to="." method="_on_back_pressed"]

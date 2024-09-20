@@ -1,0 +1,95 @@
+[gd_scene load_steps=8 format=3 uid="uid://idyvanbu5hew"]
+
+[ext_resource type="Script" path="res://scenes/Volume2.gd" id="1_xko0v"]
+[ext_resource type="FontFile" uid="uid://d2h0mssn07n54" path="res://assets/fonts/QuinqueFive.ttf" id="2_867nu"]
+[ext_resource type="Script" path="res://scenes/Music.gd" id="3_ly57s"]
+[ext_resource type="Texture2D" uid="uid://w8luk20ojcho" path="res://assets/Tiles/Transparent/tile_0184.png" id="4_8u1l2"]
+[ext_resource type="AudioStream" uid="uid://ueesvidfhj3v" path="res://audio/electronica-retro-dramatic-80s-movies-music-21507.mp3" id="5_nk7ws"]
+
+[sub_resource type="FontVariation" id="FontVariation_40tmc"]
+base_font = ExtResource("2_867nu")
+
+[sub_resource type="FontVariation" id="FontVariation_ouyfc"]
+base_font = ExtResource("2_867nu")
+
+[node name="Menu" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_xko0v")
+
+[node name="MarginContainer" type="MarginContainer" parent="."]
+layout_mode = 0
+offset_top = 6.0
+offset_right = 289.0
+offset_bottom = 168.0
+scale = Vector2(4, 4)
+
+[node name="VBoxContainer" type="VBoxContainer" parent="MarginContainer"]
+layout_mode = 2
+
+[node name="Label" type="Label" parent="MarginContainer/VBoxContainer"]
+texture_filter = 1
+texture_repeat = 1
+layout_mode = 2
+theme_override_fonts/font = SubResource("FontVariation_40tmc")
+text = "Music"
+horizontal_alignment = 1
+
+[node name="Music" type="HSlider" parent="MarginContainer/VBoxContainer"]
+layout_mode = 2
+max_value = 1.0
+step = 0.001
+script = ExtResource("3_ly57s")
+
+[node name="Label2" type="Label" parent="MarginContainer/VBoxContainer"]
+texture_filter = 1
+texture_repeat = 1
+layout_mode = 2
+theme_override_fonts/font = SubResource("FontVariation_40tmc")
+text = "Entities"
+horizontal_alignment = 1
+
+[node name="Entities" type="HSlider" parent="MarginContainer/VBoxContainer"]
+layout_mode = 2
+max_value = 1.0
+step = 0.001
+script = ExtResource("3_ly57s")
+
+[node name="Label3" type="Label" parent="MarginContainer/VBoxContainer"]
+texture_filter = 1
+texture_repeat = 1
+layout_mode = 2
+theme_override_fonts/font = SubResource("FontVariation_40tmc")
+text = "Collectables
+"
+horizontal_alignment = 1
+
+[node name="Collectables" type="HSlider" parent="MarginContainer/VBoxContainer"]
+layout_mode = 2
+max_value = 1.0
+step = 0.001
+script = ExtResource("3_ly57s")
+
+[node name="Back" type="Button" parent="MarginContainer/VBoxContainer"]
+texture_filter = 1
+layout_mode = 2
+size_flags_vertical = 0
+theme_override_fonts/font = SubResource("FontVariation_ouyfc")
+text = "Back
+"
+icon = ExtResource("4_8u1l2")
+expand_icon = true
+
+[node name="Camera2D" type="Camera2D" parent="."]
+position = Vector2(581, 310)
+
+[node name="Background music" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("5_nk7ws")
+autoplay = true
+bus = &"Music"
+
+[connection signal="pressed" from="MarginContainer/VBoxContainer/Back" to="." method="_on_back_pressed"]

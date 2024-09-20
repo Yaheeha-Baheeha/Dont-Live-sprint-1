@@ -1,0 +1,54 @@
+[gd_scene load_steps=5 format=3 uid="uid://b5wwyugpy7hey"]
+
+[ext_resource type="Texture2D" uid="uid://bgk4en5g0xh00" path="res://assets/Tiles/Transparent/tile_0133.png" id="1_2l23l"]
+[ext_resource type="Script" path="res://scenes/pause_menu.gd" id="1_126or"]
+[ext_resource type="Texture2D" uid="uid://bju0ehgns1rfv" path="res://assets/Tiles/Transparent/tile_0091.png" id="3_35wlt"]
+[ext_resource type="Texture2D" uid="uid://delay4txd1sqt" path="res://assets/Tiles/Transparent/tile_0246.png" id="3_apxhm"]
+
+[node name="PauseMenu" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_126or")
+
+[node name="MarginContainer" type="MarginContainer" parent="."]
+layout_mode = 1
+anchors_preset = -1
+anchor_right = 0.027
+anchor_bottom = 0.028
+offset_left = -265.0
+offset_top = -22.0
+offset_right = 263.896
+offset_bottom = 62.856
+scale = Vector2(1.335, 1.335)
+
+[node name="VBoxContainer" type="VBoxContainer" parent="MarginContainer"]
+layout_mode = 2
+
+[node name="Resume" type="Button" parent="MarginContainer/VBoxContainer"]
+layout_mode = 2
+action_mode = 0
+text = "Resume"
+icon = ExtResource("1_2l23l")
+expand_icon = true
+
+[node name="Options" type="Button" parent="MarginContainer/VBoxContainer"]
+layout_mode = 2
+text = "Main menu"
+icon = ExtResource("3_35wlt")
+icon_alignment = 2
+expand_icon = true
+
+[node name="Quit" type="Button" parent="MarginContainer/VBoxContainer"]
+layout_mode = 2
+text = "Ragequit"
+icon = ExtResource("3_apxhm")
+expand_icon = true
+
+[connection signal="pressed" from="MarginContainer/VBoxContainer/Resume" to="." method="_on_resume_pressed"]
+[connection signal="pressed" from="MarginContainer/VBoxContainer/Options" to="." method="_on_options_pressed"]
+[connection signal="button_down" from="MarginContainer/VBoxContainer/Quit" to="." method="_on_quit_button_down"]
+[connection signal="pressed" from="MarginContainer/VBoxContainer/Quit" to="." method="_on_quit_pressed"]
