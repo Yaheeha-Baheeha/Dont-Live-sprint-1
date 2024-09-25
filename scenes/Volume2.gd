@@ -4,7 +4,7 @@ extends Control
 @onready var menu = $"../" #finds parent node
 
 # Called when the node enters the scene tree for the first time.
-func _physics_process(delta):
+func _physics_process(_delta):
 	#replays music after it's over
 	if $"Background music".playing == false:
 		$"Background music".play()

@@ -6000,458 +6000,572 @@ position = Vector2(5192, -263)
 position = Vector2(2144, -403)
 
 [node name="enemies" type="Node2D" parent="."]
+z_index = 9
 position = Vector2(-44, 92)
 scale = Vector2(0.08, 0.08)
 
 [node name="Healer" parent="enemies" instance=ExtResource("22_v8c5v")]
+z_index = 26
 position = Vector2(11837.5, -1887.5)
 scale = Vector2(12.5, 12.5)
 
 [node name="Healer2" parent="enemies" instance=ExtResource("22_v8c5v")]
+z_index = 26
 position = Vector2(19250, -1975)
 scale = Vector2(12.5, 12.5)
 
 [node name="Healer3" parent="enemies" instance=ExtResource("22_v8c5v")]
+z_index = 26
 position = Vector2(32987.5, -6800)
 scale = Vector2(12.5, 12.5)
 
 [node name="Healer4" parent="enemies" instance=ExtResource("22_v8c5v")]
+z_index = 26
 position = Vector2(46950, -3112.5)
 scale = Vector2(12.5, 12.5)
 
 [node name="Healer5" parent="enemies" instance=ExtResource("22_v8c5v")]
+z_index = 26
 position = Vector2(54975, -3362.5)
 scale = Vector2(12.5, 12.5)
 
 [node name="Healer6" parent="enemies" instance=ExtResource("22_v8c5v")]
+z_index = 26
 position = Vector2(59612.5, -3337.5)
 scale = Vector2(12.5, 12.5)
 
 [node name="Healer7" parent="enemies" instance=ExtResource("22_v8c5v")]
+z_index = 26
 position = Vector2(65350, -3350)
 scale = Vector2(12.5, 12.5)
 
 [node name="Healer8" parent="enemies" instance=ExtResource("22_v8c5v")]
+z_index = 26
 position = Vector2(70937.5, -3750)
 scale = Vector2(12.5, 12.5)
 
 [node name="Healer9" parent="enemies" instance=ExtResource("22_v8c5v")]
+z_index = 26
 position = Vector2(73262.5, -3750)
 scale = Vector2(12.5, 12.5)
 
 [node name="Healer10" parent="enemies" instance=ExtResource("22_v8c5v")]
+z_index = 26
 position = Vector2(76512.5, -6112.5)
 scale = Vector2(12.5, 12.5)
 
 [node name="Healer11" parent="enemies" instance=ExtResource("22_v8c5v")]
+z_index = 26
 position = Vector2(79550, -6237.5)
 scale = Vector2(12.5, 12.5)
 
 [node name="Healer12" parent="enemies" instance=ExtResource("22_v8c5v")]
+z_index = 26
 position = Vector2(82462.5, -6175)
 scale = Vector2(12.5, 12.5)
 
 [node name="Healer13" parent="enemies" instance=ExtResource("22_v8c5v")]
+z_index = 26
 position = Vector2(89900, -6112.5)
 scale = Vector2(12.5, 12.5)
 
 [node name="Healer14" parent="enemies" instance=ExtResource("22_v8c5v")]
+z_index = 26
 position = Vector2(92675, -6112.5)
 scale = Vector2(12.5, 12.5)
 
 [node name="Healer15" parent="enemies" instance=ExtResource("22_v8c5v")]
+z_index = 26
 position = Vector2(95262.5, -6075)
 scale = Vector2(12.5, 12.5)
 
 [node name="Healer16" parent="enemies" instance=ExtResource("22_v8c5v")]
+z_index = 26
 position = Vector2(102100, -6125)
 scale = Vector2(12.5, 12.5)
 
 [node name="Healer17" parent="enemies" instance=ExtResource("22_v8c5v")]
+z_index = 26
 position = Vector2(112300, -1925)
 scale = Vector2(12.5, 12.5)
 
 [node name="Healer18" parent="enemies" instance=ExtResource("22_v8c5v")]
+z_index = 26
 position = Vector2(114313, -1900)
 scale = Vector2(12.5, 12.5)
 
 [node name="Healer19" parent="enemies" instance=ExtResource("22_v8c5v")]
+z_index = 26
 position = Vector2(116300, -1912.5)
 scale = Vector2(12.5, 12.5)
 
 [node name="Healer20" parent="enemies" instance=ExtResource("22_v8c5v")]
+z_index = 26
 position = Vector2(118275, -1912.5)
 scale = Vector2(12.5, 12.5)
 
 [node name="Healer21" parent="enemies" instance=ExtResource("22_v8c5v")]
+z_index = 26
 position = Vector2(120425, -1912.5)
 scale = Vector2(12.5, 12.5)
 
 [node name="Healer22" parent="enemies" instance=ExtResource("22_v8c5v")]
+z_index = 26
 position = Vector2(122650, -1900)
 scale = Vector2(12.5, 12.5)
 
 [node name="Healer23" parent="enemies" instance=ExtResource("22_v8c5v")]
+z_index = 26
 position = Vector2(124663, -1900)
 scale = Vector2(12.5, 12.5)
 
 [node name="Healer24" parent="enemies" instance=ExtResource("22_v8c5v")]
+z_index = 26
 position = Vector2(128650, -5337.5)
 scale = Vector2(12.5, 12.5)
 
 [node name="Healer25" parent="enemies" instance=ExtResource("22_v8c5v")]
+z_index = 26
 position = Vector2(131450, -5312.5)
 scale = Vector2(12.5, 12.5)
 
 [node name="Healer26" parent="enemies" instance=ExtResource("22_v8c5v")]
+z_index = 26
 position = Vector2(134300, -5362.5)
 scale = Vector2(12.5, 12.5)
 
 [node name="Healer27" parent="enemies" instance=ExtResource("22_v8c5v")]
+z_index = 26
 position = Vector2(137063, -5350)
 scale = Vector2(12.5, 12.5)
 
 [node name="Healer28" parent="enemies" instance=ExtResource("22_v8c5v")]
+z_index = 26
 position = Vector2(139850, -5387.5)
 scale = Vector2(12.5, 12.5)
 
 [node name="Healer29" parent="enemies" instance=ExtResource("22_v8c5v")]
+z_index = 26
 position = Vector2(144525, -5487.5)
 scale = Vector2(12.5, 12.5)
 
 [node name="Healer30" parent="enemies" instance=ExtResource("22_v8c5v")]
+z_index = 26
 position = Vector2(172775, -1687.5)
 scale = Vector2(12.5, 12.5)
 
 [node name="Healer31" parent="enemies" instance=ExtResource("22_v8c5v")]
+z_index = 26
 position = Vector2(174338, -1750)
 scale = Vector2(12.5, 12.5)
 
 [node name="Healer32" parent="enemies" instance=ExtResource("22_v8c5v")]
+z_index = 26
 position = Vector2(176175, -1687.5)
 scale = Vector2(12.5, 12.5)
 
 [node name="Healer33" parent="enemies" instance=ExtResource("22_v8c5v")]
+z_index = 26
 position = Vector2(173375, -862.5)
 scale = Vector2(12.5, 12.5)
 
 [node name="Healer34" parent="enemies" instance=ExtResource("22_v8c5v")]
+z_index = 26
 position = Vector2(178388, -900)
 scale = Vector2(12.5, 12.5)
 
 [node name="Healer35" parent="enemies" instance=ExtResource("22_v8c5v")]
+z_index = 26
 position = Vector2(175763, -875)
 scale = Vector2(12.5, 12.5)
 
 [node name="Healer36" parent="enemies" instance=ExtResource("22_v8c5v")]
+z_index = 26
 position = Vector2(171488, -887.5)
 scale = Vector2(12.5, 12.5)
 
 [node name="Healer37" parent="enemies" instance=ExtResource("22_v8c5v")]
+z_index = 26
 position = Vector2(171488, -887.5)
 scale = Vector2(12.5, 12.5)
 
 [node name="Healer38" parent="enemies" instance=ExtResource("22_v8c5v")]
+z_index = 26
 position = Vector2(185175, -3300)
 scale = Vector2(12.5, 12.5)
 
 [node name="Healer39" parent="enemies" instance=ExtResource("22_v8c5v")]
+z_index = 26
 position = Vector2(186913, -3300)
 scale = Vector2(12.5, 12.5)
 
 [node name="Healer40" parent="enemies" instance=ExtResource("22_v8c5v")]
+z_index = 26
 position = Vector2(221213, -1850)
 scale = Vector2(12.5, 12.5)
 
 [node name="Healer41" parent="enemies" instance=ExtResource("22_v8c5v")]
+z_index = 26
 position = Vector2(224213, -1862.5)
 scale = Vector2(12.5, 12.5)
 
 [node name="Healer42" parent="enemies" instance=ExtResource("22_v8c5v")]
+z_index = 26
 position = Vector2(227213, -1837.5)
 scale = Vector2(12.5, 12.5)
 
 [node name="Healer43" parent="enemies" instance=ExtResource("22_v8c5v")]
+z_index = 26
 position = Vector2(230213, -1837.5)
 scale = Vector2(12.5, 12.5)
 
 [node name="Healer44" parent="enemies" instance=ExtResource("22_v8c5v")]
+z_index = 26
 position = Vector2(235650, -1900)
 scale = Vector2(12.5, 12.5)
 
 [node name="Healer45" parent="enemies" instance=ExtResource("22_v8c5v")]
+z_index = 26
 position = Vector2(238038, -1875)
 scale = Vector2(12.5, 12.5)
 
 [node name="Healer46" parent="enemies" instance=ExtResource("22_v8c5v")]
+z_index = 26
 position = Vector2(239038, -1887.5)
 scale = Vector2(12.5, 12.5)
 
 [node name="Healer47" parent="enemies" instance=ExtResource("22_v8c5v")]
+z_index = 26
 position = Vector2(238225, -1200)
 scale = Vector2(12.5, 12.5)
 
 [node name="Healer52" parent="enemies" instance=ExtResource("22_v8c5v")]
+z_index = 26
 position = Vector2(240738, -1862.5)
 scale = Vector2(12.5, 12.5)
 
 [node name="Healer53" parent="enemies" instance=ExtResource("22_v8c5v")]
+z_index = 26
 position = Vector2(242438, -2275)
 scale = Vector2(12.5, 12.5)
 
 [node name="Healer54" parent="enemies" instance=ExtResource("22_v8c5v")]
+z_index = 26
 position = Vector2(244013, -3300)
 scale = Vector2(12.5, 12.5)
 
 [node name="Healer55" parent="enemies" instance=ExtResource("22_v8c5v")]
+z_index = 26
 position = Vector2(245250, -4512.5)
 scale = Vector2(12.5, 12.5)
 
 [node name="Healer56" parent="enemies" instance=ExtResource("22_v8c5v")]
+z_index = 26
 position = Vector2(246663, -6100)
 scale = Vector2(12.5, 12.5)
 
 [node name="Healer57" parent="enemies" instance=ExtResource("22_v8c5v")]
+z_index = 26
 position = Vector2(248250, -6100)
 scale = Vector2(12.5, 12.5)
 
 [node name="Healer58" parent="enemies" instance=ExtResource("22_v8c5v")]
+z_index = 26
 position = Vector2(251738, -6112.5)
 scale = Vector2(12.5, 12.5)
 
 [node name="Healer59" parent="enemies" instance=ExtResource("22_v8c5v")]
+z_index = 26
 position = Vector2(253775, -3425)
 scale = Vector2(12.5, 12.5)
 
 [node name="Healer60" parent="enemies" instance=ExtResource("22_v8c5v")]
+z_index = 26
 position = Vector2(250500, -3312.5)
 scale = Vector2(12.5, 12.5)
 
 [node name="Healer61" parent="enemies" instance=ExtResource("22_v8c5v")]
+z_index = 26
 position = Vector2(254688, -3325)
 scale = Vector2(12.5, 12.5)
 
 [node name="Healer62" parent="enemies" instance=ExtResource("22_v8c5v")]
+z_index = 26
 position = Vector2(254688, -5512.5)
 scale = Vector2(12.5, 12.5)
 
 [node name="Healer63" parent="enemies" instance=ExtResource("22_v8c5v")]
+z_index = 26
 position = Vector2(255125, -6312.5)
 scale = Vector2(12.5, 12.5)
 
 [node name="Healer64" parent="enemies" instance=ExtResource("22_v8c5v")]
+z_index = 26
 position = Vector2(257138, -6362.5)
 scale = Vector2(12.5, 12.5)
 
 [node name="Healer65" parent="enemies" instance=ExtResource("22_v8c5v")]
+z_index = 26
 position = Vector2(258613, -3312.5)
 scale = Vector2(12.5, 12.5)
 
 [node name="Healer66" parent="enemies" instance=ExtResource("22_v8c5v")]
+z_index = 26
 position = Vector2(258250, -6112.5)
 scale = Vector2(12.5, 12.5)
 
 [node name="Healer67" parent="enemies" instance=ExtResource("22_v8c5v")]
+z_index = 26
 position = Vector2(261863, -3462.5)
 scale = Vector2(12.5, 12.5)
 
 [node name="Healer68" parent="enemies" instance=ExtResource("22_v8c5v")]
+z_index = 26
 position = Vector2(263438, -3450)
 scale = Vector2(12.5, 12.5)
 
 [node name="Healer69" parent="enemies" instance=ExtResource("22_v8c5v")]
+z_index = 26
 position = Vector2(264725, -3500)
 scale = Vector2(12.5, 12.5)
 
 [node name="Healer70" parent="enemies" instance=ExtResource("22_v8c5v")]
+z_index = 26
 position = Vector2(265950, -3537.5)
 scale = Vector2(12.5, 12.5)
 
 [node name="Healer71" parent="enemies" instance=ExtResource("22_v8c5v")]
+z_index = 26
 position = Vector2(267638, -3587.5)
 scale = Vector2(12.5, 12.5)
 
 [node name="Healer72" parent="enemies" instance=ExtResource("22_v8c5v")]
+z_index = 26
 position = Vector2(269138, -3612.5)
 scale = Vector2(12.5, 12.5)
 
 [node name="Healer73" parent="enemies" instance=ExtResource("22_v8c5v")]
+z_index = 26
 position = Vector2(270500, -3650)
 scale = Vector2(12.5, 12.5)
 
 [node name="Healer74" parent="enemies" instance=ExtResource("22_v8c5v")]
+z_index = 26
 position = Vector2(272688, -3662.5)
 scale = Vector2(12.5, 12.5)
 
 [node name="Healer75" parent="enemies" instance=ExtResource("22_v8c5v")]
+z_index = 26
 position = Vector2(274238, -3737.5)
 scale = Vector2(12.5, 12.5)
 
 [node name="Healer76" parent="enemies" instance=ExtResource("22_v8c5v")]
+z_index = 26
 position = Vector2(275975, -3787.5)
 scale = Vector2(12.5, 12.5)
 
 [node name="Healer77" parent="enemies" instance=ExtResource("22_v8c5v")]
+z_index = 26
 position = Vector2(277750, -3862.5)
 scale = Vector2(12.5, 12.5)
 
 [node name="Healer78" parent="enemies" instance=ExtResource("22_v8c5v")]
+z_index = 26
 position = Vector2(279013, -3962.5)
 scale = Vector2(12.5, 12.5)
 
 [node name="Healer79" parent="enemies" instance=ExtResource("22_v8c5v")]
+z_index = 26
 position = Vector2(280500, -3962.5)
 scale = Vector2(12.5, 12.5)
 
 [node name="Healer80" parent="enemies" instance=ExtResource("22_v8c5v")]
+z_index = 26
 position = Vector2(282250, -3987.5)
 scale = Vector2(12.5, 12.5)
 
 [node name="Healer81" parent="enemies" instance=ExtResource("22_v8c5v")]
+z_index = 26
 position = Vector2(283738, -3962.5)
 scale = Vector2(12.5, 12.5)
 
 [node name="Healer82" parent="enemies" instance=ExtResource("22_v8c5v")]
+z_index = 26
 position = Vector2(285213, -3987.5)
 scale = Vector2(12.5, 12.5)
 
 [node name="Healer83" parent="enemies" instance=ExtResource("22_v8c5v")]
+z_index = 26
 position = Vector2(286513, -4012.5)
 scale = Vector2(12.5, 12.5)
 
 [node name="Healer84" parent="enemies" instance=ExtResource("22_v8c5v")]
+z_index = 26
 position = Vector2(287475, -4075)
 scale = Vector2(12.5, 12.5)
 
 [node name="Healer85" parent="enemies" instance=ExtResource("22_v8c5v")]
+z_index = 26
 position = Vector2(288563, -4075)
 scale = Vector2(12.5, 12.5)
 
 [node name="Healer86" parent="enemies" instance=ExtResource("22_v8c5v")]
+z_index = 26
 position = Vector2(290025, -4100)
 scale = Vector2(12.5, 12.5)
 
 [node name="Healer87" parent="enemies" instance=ExtResource("22_v8c5v")]
+z_index = 26
 position = Vector2(291350, -4100)
 scale = Vector2(12.5, 12.5)
 
 [node name="Healer88" parent="enemies" instance=ExtResource("22_v8c5v")]
+z_index = 26
 position = Vector2(293088, -4050)
 scale = Vector2(12.5, 12.5)
 
 [node name="Healer89" parent="enemies" instance=ExtResource("22_v8c5v")]
+z_index = 26
 position = Vector2(294775, -4287.5)
 scale = Vector2(12.5, 12.5)
 
 [node name="Healer90" parent="enemies" instance=ExtResource("22_v8c5v")]
+z_index = 26
 position = Vector2(295913, -4275)
 scale = Vector2(12.5, 12.5)
 
 [node name="Healer91" parent="enemies" instance=ExtResource("22_v8c5v")]
+z_index = 26
 position = Vector2(297313, -4275)
 scale = Vector2(12.5, 12.5)
 
 [node name="Healer92" parent="enemies" instance=ExtResource("22_v8c5v")]
+z_index = 26
 position = Vector2(298188, -4312.5)
 scale = Vector2(12.5, 12.5)
 
 [node name="Healer93" parent="enemies" instance=ExtResource("22_v8c5v")]
+z_index = 26
 position = Vector2(299875, -4350)
 scale = Vector2(12.5, 12.5)
 
 [node name="Healer94" parent="enemies" instance=ExtResource("22_v8c5v")]
+z_index = 26
 position = Vector2(301388, -4337.5)
 scale = Vector2(12.5, 12.5)
 
 [node name="Healer95" parent="enemies" instance=ExtResource("22_v8c5v")]
+z_index = 26
 position = Vector2(303125, -4375)
 scale = Vector2(12.5, 12.5)
 
 [node name="Healer96" parent="enemies" instance=ExtResource("22_v8c5v")]
+z_index = 26
 position = Vector2(304338, -4512.5)
 scale = Vector2(12.5, 12.5)
 
 [node name="Healer97" parent="enemies" instance=ExtResource("22_v8c5v")]
+z_index = 26
 position = Vector2(305688, -4487.5)
 scale = Vector2(12.5, 12.5)
 
 [node name="Healer98" parent="enemies" instance=ExtResource("22_v8c5v")]
+z_index = 26
 position = Vector2(307075, -4462.5)
 scale = Vector2(12.5, 12.5)
 
 [node name="Healer99" parent="enemies" instance=ExtResource("22_v8c5v")]
+z_index = 26
 position = Vector2(308513, -4462.5)
 scale = Vector2(12.5, 12.5)
 
 [node name="Healer100" parent="enemies" instance=ExtResource("22_v8c5v")]
+z_index = 26
 position = Vector2(310000, -4450)
 scale = Vector2(12.5, 12.5)
 
 [node name="Healer101" parent="enemies" instance=ExtResource("22_v8c5v")]
+z_index = 26
 position = Vector2(332263, -5662.5)
 scale = Vector2(12.5, 12.5)
 
 [node name="Healer102" parent="enemies" instance=ExtResource("22_v8c5v")]
+z_index = 26
 position = Vector2(335475, -5275)
 scale = Vector2(12.5, 12.5)
 
 [node name="Healer103" parent="enemies" instance=ExtResource("22_v8c5v")]
+z_index = 26
 position = Vector2(337563, -4887.5)
 scale = Vector2(12.5, 12.5)
 
 [node name="Healer104" parent="enemies" instance=ExtResource("22_v8c5v")]
+z_index = 26
 position = Vector2(340138, -4500)
 scale = Vector2(12.5, 12.5)
 
 [node name="Healer105" parent="enemies" instance=ExtResource("22_v8c5v")]
+z_index = 26
 position = Vector2(344125, -4350)
 scale = Vector2(12.5, 12.5)
 
 [node name="Healer106" parent="enemies" instance=ExtResource("22_v8c5v")]
+z_index = 26
 position = Vector2(348075, -3025)
 scale = Vector2(12.5, 12.5)
 
 [node name="Healer107" parent="enemies" instance=ExtResource("22_v8c5v")]
+z_index = 26
 position = Vector2(351063, -3362.5)
 scale = Vector2(12.5, 12.5)
 
 [node name="Healer108" parent="enemies" instance=ExtResource("22_v8c5v")]
+z_index = 26
 position = Vector2(353475, -3375)
 scale = Vector2(12.5, 12.5)
 
 [node name="Healer109" parent="enemies" instance=ExtResource("22_v8c5v")]
+z_index = 26
 position = Vector2(355438, -3350)
 scale = Vector2(12.5, 12.5)
 
 [node name="Healer110" parent="enemies" instance=ExtResource("22_v8c5v")]
+z_index = 26
 position = Vector2(366650, -1687.5)
 scale = Vector2(12.5, 12.5)
 
 [node name="Healer111" parent="enemies" instance=ExtResource("22_v8c5v")]
+z_index = 26
 position = Vector2(366400, -1687.5)
 scale = Vector2(12.5, 12.5)
 
 [node name="Healer112" parent="enemies" instance=ExtResource("22_v8c5v")]
+z_index = 26
 position = Vector2(362725, -437.5)
 scale = Vector2(12.5, 12.5)
 
 [node name="Healer113" parent="enemies" instance=ExtResource("22_v8c5v")]
+z_index = 26
 position = Vector2(357738, -650)
 scale = Vector2(12.5, 12.5)
 
 [node name="Healer48" parent="enemies" instance=ExtResource("22_v8c5v")]
+z_index = 26
 position = Vector2(234375, -1237.5)
 scale = Vector2(12.5, 12.5)
 
 [node name="Healer49" parent="enemies" instance=ExtResource("22_v8c5v")]
+z_index = 26
 position = Vector2(230363, -1175)
 scale = Vector2(12.5, 12.5)
 
 [node name="Healer50" parent="enemies" instance=ExtResource("22_v8c5v")]
+z_index = 26
 position = Vector2(232400, -1212.5)
 scale = Vector2(12.5, 12.5)
 
 [node name="Healer51" parent="enemies" instance=ExtResource("22_v8c5v")]
+z_index = 26
 position = Vector2(227825, -1187.5)
 scale = Vector2(12.5, 12.5)
 

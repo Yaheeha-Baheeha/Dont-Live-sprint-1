@@ -111,6 +111,10 @@ animations = [{
 }]
 
 [node name="Explosion" type="AnimatedSprite2D"]
+modulate = Color(0.917647, 1, 1, 1)
+top_level = true
+z_index = 48
+z_as_relative = false
 position = Vector2(-4.76837e-07, 0)
 scale = Vector2(0.209239, 0.209239)
 sprite_frames = SubResource("SpriteFrames_7yv8d")
